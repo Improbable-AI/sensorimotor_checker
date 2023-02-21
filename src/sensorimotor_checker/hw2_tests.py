@@ -27,4 +27,4 @@ class TestPolicyGradients(unittest.TestCase):
         logps = torch.tensor([0.2301, 0.2181, 0.2463, 0.3056])
         advantages = torch.tensor([4., 3., 2., 1.])
         assert(torch.isclose(compute_policy_loss_with_baseline(logps, advantages), torch.tensor(-0.5932), rtol=1e-4))
-           
+        

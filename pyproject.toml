@@ -4,9 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sensorimotor_checker"
-version = "0.0.7"
+version = "0.0.8"
 authors = [
   { name="Anika Cheerla", email="acheerla@mit.edu" },
+  { name="Sathwik Karnik", email="skarnik2012@gmail.com" },
 ]
 description = "Checker for 6.8200 psets"
 readme = "README.md"
