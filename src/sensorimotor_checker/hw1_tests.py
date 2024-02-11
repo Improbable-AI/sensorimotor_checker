@@ -82,8 +82,9 @@ class TestUCBAgent(unittest.TestCase):
     def check_exploration_bonus(self):
         np.random.seed(0)
         agent = self.input(num_actions=10)
-        self.assertEqual(agent.get_action(), 5)
-        self.assertEqual(agent.get_action(), 0)
+        expected_bonus = np.array([4.0036449,  2.83101153, 2.31151316, 2.00182995, 1.79049159,
+                                   1.63448799, 1.51324202, 1.41550842, 1.33455423, 1.26606938])
+        assert(np.allclose(agent.get_bonus(55, np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])), expected_bonus))
 
     def check_performance(self):
         try:

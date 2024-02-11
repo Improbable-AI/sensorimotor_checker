@@ -4,8 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "sensorimotor_checker"
-version = "0.0.8"
+version = "0.0.9"
 authors = [
+  { name = "Nishant Abhangi", email="abhangin@mit.edu"},
   { name="Anika Cheerla", email="acheerla@mit.edu" },
   { name="Sathwik Karnik", email="skarnik2012@gmail.com" },
 ]
